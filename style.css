@@ -13,3 +13,24 @@
 body {
   font-family: "San Francisco";
 }
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+nav {
+  font-size: 13px;
+}
+
+li {
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+}
