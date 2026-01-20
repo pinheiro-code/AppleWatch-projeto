@@ -12,15 +12,26 @@
 
 body {
   font-family: "San Francisco";
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 48px;
+  font-size: 14px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 1000px;
+  margin: 0 auto; */
+  align-items: center;
 }
 
 ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 0 auto;
-  align-items: center;
+  gap: 16px;
 }
 
 nav {
@@ -33,4 +44,83 @@ li {
 
 svg {
   display: block;
+}
+
+main {
+  /* max-width: 1000px;
+  margin: 0 auto; */
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* este display grid seria a grade, como eu tenho duas div, uma eu uso 33% da tela e a outra 66%*/
+#produto {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#precos {
+  font-size: 17.6px;
+}
+
+#a-vista,
+#parcelas {
+  font-size: 12.8px;
+}
+
+#opcoes-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#selo-carbono {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  & img {
+    width: 25px;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#selecao-cores label img {
+  width: 32px;
+  cursor: pointer;
+  mix-blend-mode: color;
+}
+
+#selecao-cores {
+  display: flex;
+  gap: 10px;
+}
+
+.cores {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#selecao-cores label {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="radio"]:checked + label {
+  border: solid 2px #0066cc;
+  border-radius: 50%;
 }

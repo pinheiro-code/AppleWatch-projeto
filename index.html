@@ -59,7 +59,111 @@
     </nav>
 
     <main>
-      <h1>Pulseira loop esportiva azul-inverno para caixa de 45 mm</h1>
+      <section id="produto">
+        <div id="opcoes-produto">
+          <h1>Pulseira loop esportiva azul-inverno para caixa de 45 mm</h1>
+
+          <div class="precos">
+            <p id="precos">R$ 499,99</p>
+            <a href="" id="parcelas">Em até 12x de R$ 41,58</a>
+            <p id="a-vista">R$ 449,10 à vista (10% de desconto)</p>
+          </div>
+
+          <div id="opcoes">
+            <div class="cores">
+              <h2 id="nome-cor-selecionada">Cor - Azul-inverno</h2>
+
+              <ul id="selecao-cores">
+                <li>
+                  <input
+                    type="radio"
+                    name="opcao-cor"
+                    id="0-cor"
+                    onclick="atualizarCorSelecionada()"
+                  />
+                  <label for="0-cor">
+                    <img
+                      src="./imagens/opcoes-cores/verde-cipreste.jpeg"
+                      alt="Opção Cor"
+                    />
+                  </label>
+                </li>
+
+                <li>
+                  <input
+                    type="radio"
+                    name="opcao-cor"
+                    id="1-cor"
+                    checked
+                    onclick="atualizarCorSelecionada()"
+                  />
+                  <label for="1-cor">
+                    <img
+                      src="./imagens/opcoes-cores/azul-inverno.jpeg"
+                      alt="Opção Cor"
+                    />
+                  </label>
+                </li>
+
+                <li>
+                  <input
+                    type="radio"
+                    name="opcao-cor"
+                    id="2-cor"
+                    onclick="atualizarCorSelecionada()"
+                  />
+                  <label for="2-cor">
+                    <img
+                      src="./imagens/opcoes-cores/meia-noite.jpeg"
+                      alt="Opção Cor"
+                    />
+                  </label>
+                </li>
+
+                <li>
+                  <input
+                    type="radio"
+                    name="opcao-cor"
+                    id="3-cor"
+                    onclick="atualizarCorSelecionada()"
+                  />
+                  <label for="3-cor">
+                    <img
+                      src="./imagens/opcoes-cores/estelar.jpeg"
+                      alt="Opção Cor"
+                    />
+                  </label>
+                </li>
+
+                <li>
+                  <input
+                    type="radio"
+                    name="opcao-cor"
+                    id="4-cor"
+                    onclick="atualizarCorSelecionada()"
+                  />
+                  <label for="4-cor">
+                    <img
+                      src="./imagens/opcoes-cores/rosa-claro.jpeg"
+                      alt="Opção Cor"
+                    />
+                  </label>
+                </li>
+              </ul>
+
+              <div id="selo-carbono">
+                <img
+                  src="./imagens/outros-recursos/neutralidade-c.jpeg"
+                  alt="Selo Carbono"
+                />
+                <p>Cabon Neutral</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="visualizacao"></div>
+      </section>
     </main>
   </body>
 </html>
