@@ -140,12 +140,6 @@ input[type="radio"]:checked + label {
   gap: 16px;
 }
 
-#tamanho-caixa {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 #opcoes-tamanho {
   display: flex;
   gap: 10px;
@@ -160,7 +154,9 @@ input[type="radio"]:checked + label {
   cursor: pointer;
 }
 
-#info-extra {
+#info-extra,
+.comprar-depois,
+#tamanho-caixa {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -175,5 +171,25 @@ input[type="radio"]:checked + label {
 .informacoes-entrega {
   display: flex;
   flex-direction: column;
+  gap: 3px;
+}
+
+button {
+  background-color: #0071e3;
+  color: white;
+  font-size: 17.6px;
+  border: none;
+  padding: 8px 35px;
+  align-items: start;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #057bf1;
+}
+
+.salvar-depois {
+  display: flex;
   gap: 3px;
 }
