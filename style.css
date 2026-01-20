@@ -134,6 +134,12 @@ input[type="radio"]:checked + label {
   border: solid 2px #0066cc;
 }
 
+#selecionar-imagem input[type="radio"]:checked + label {
+  border-radius: 0%;
+  border: none;
+  border-bottom: solid 2px #6e6e7399;
+}
+
 #opcoes {
   display: flex;
   flex-direction: column;
@@ -192,4 +198,15 @@ button:hover {
 .salvar-depois {
   display: flex;
   gap: 3px;
+}
+
+#selecionar-imagem label img {
+  width: 46px;
+  cursor: pointer;
+}
+
+#selecionar-imagem {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
 }

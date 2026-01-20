@@ -211,6 +211,7 @@
             </div>
 
             <button>Colocar na sacola</button>
+
             <div class="comprar-depois">
               <h2>Precisa de um tempo?</h2>
 
@@ -241,8 +242,60 @@
             </div>
           </div>
         </div>
+        <div id="visualizacao">
+          <img
+            src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-1.jpeg"
+            alt="Imagem Grande"
+          />
 
-        <div id="visualizacao"></div>
+          <ul id="selecionar-imagem">
+            <li>
+              <input
+                type="radio"
+                name="opcao-imagem"
+                id="0-imagem"
+                onclick="atualizarImagemSelecionada()"
+              />
+              <label for="0-imagem">
+                <img
+                  src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-0.jpeg"
+                  alt="Opção Imagem"
+                />
+              </label>
+            </li>
+
+            <li>
+              <input
+                type="radio"
+                name="opcao-imagem"
+                id="1-imagem"
+                checked
+                onclick="atualizarImagemSelecionada()"
+              />
+              <label for="1-imagem">
+                <img
+                  src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-1.jpeg"
+                  alt="Opção Imagem"
+                />
+              </label>
+            </li>
+
+            <li>
+              <input
+                type="radio"
+                name="opcao-imagem"
+                id="2-imagem"
+                onclick="atualizarImagemSelecionada()"
+              />
+              <label for="2-imagem">
+                <img
+                  src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-2.jpeg"
+                  alt="Opção Imagem"
+                />
+              </label>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>
