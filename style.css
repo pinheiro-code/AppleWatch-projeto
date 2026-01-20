@@ -30,8 +30,6 @@ nav ul {
 
 ul {
   list-style: none;
-  display: flex;
-  gap: 16px;
 }
 
 nav {
@@ -49,6 +47,7 @@ svg {
 main {
   /* max-width: 1000px;
   margin: 0 auto; */
+  margin-bottom: 48px;
 }
 
 a {
@@ -63,7 +62,7 @@ a:hover {
 /* este display grid seria a grade, como eu tenho duas div, uma eu uso 33% da tela e a outra 66%*/
 #produto {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
 }
 
 #precos {
@@ -71,14 +70,19 @@ a:hover {
 }
 
 #a-vista,
-#parcelas {
+#parcelas,
+.pequeno {
   font-size: 12.8px;
+}
+
+.cinza {
+  color: #6e6e73;
 }
 
 #opcoes-produto {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 25px;
 }
 
 #selo-carbono {
@@ -123,4 +127,41 @@ input[type="radio"] {
 input[type="radio"]:checked + label {
   border: solid 2px #0066cc;
   border-radius: 50%;
+}
+
+#opcoes-tamanho input[type="radio"]:checked + label,
+input[type="radio"]:checked + label {
+  border: solid 2px #0066cc;
+}
+
+#opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#tamanho-caixa {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#opcoes-tamanho {
+  display: flex;
+  gap: 10px;
+}
+
+#opcoes-tamanho label {
+  border: solid 1px black;
+  padding: 30px 50px;
+  border-radius: 16px;
+  font-size: 17.6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#info-extra {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
