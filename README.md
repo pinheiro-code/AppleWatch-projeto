@@ -16,9 +16,7 @@ O projeto foi desenvolvido utilizando **HTML, CSS e JavaScript puro**, com aten�
 
 > 📌 **Vídeo de demonstração do projeto**
 
-<p align="center">
-  <video src="demo.mp4" width="640" controls></video>
-</p>
+[▶️ Clique aqui para ver a demonstração completa do Hashwatch](https://pinheiro-code.github.io/AppleWatch-projeto/demo.html)
 
 ---
 
